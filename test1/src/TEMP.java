@@ -7,3 +7,7 @@ public class TEMP {
         IO.print(t);
     }
 }
+
+// in java geen methodes zoals javascript push, pop, etc maar collections
+// classe = object?
+

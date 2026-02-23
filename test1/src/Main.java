@@ -68,10 +68,29 @@ void main () {
     }
 }*/
 
-void main () {
+/*void main () {
 
-    String[] studenten = new String[10];
-    for(int i = 0; i< studenten.length; i++){
-        IO.println(studenten[i]);
+    String[] lijst = new String[10];
+    lijst [2] = "Ruben";
+    for(int i = 0; i< lijst.length; i++){
+        IO.println(lijst[i]);
     }
+}*/
+
+// in java geen methodes zoals javascript push, pop, etc maar collections
+// classe = object?
+// classe heeft functionaliteiten, functies, gegevens. bij primitieve datatype heb je dat niet. gwn gegevens als geheugen
+// classe ex. Date datum = new Date ()
+/*void main () {
+    int a; // primitieve datatype
+    Integer b; // object
+    String c;
+}*/
+
+void main (){
+    Date d = new Date ();
+    System.out.println(d);
+    LocalDate d2 = LocalDate.now();
 }
+
+// bij het examen ga je de juiste tijdsclasse moeten gebruiken! vergelijkingen ervoor of erna..
