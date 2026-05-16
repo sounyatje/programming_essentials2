@@ -87,10 +87,31 @@ void main () {
     String c;
 }*/
 
-void main (){
+/*void main (){
     Date d = new Date ();
     System.out.println(d);
     LocalDate d2 = LocalDate.now();
+}*/
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Geef de straal:");
+        float straal = scanner.nextFloat();
+
+        System.out.println("Geef de kleur:");
+        String kleur = scanner.next();
+
+        Cirkel c = new Cirkel(straal, kleur);
+        c.print();
+
+        System.out.println("Omtrek: " + c.geefOmtrek());
+        System.out.println("Oppervlakte: " + c.geefOppervlakte());
+    }
 }
+
 
 // bij het examen ga je de juiste tijdsclasse moeten gebruiken! vergelijkingen ervoor of erna..
