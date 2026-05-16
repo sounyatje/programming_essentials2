@@ -93,7 +93,7 @@ void main () {
     LocalDate d2 = LocalDate.now();
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
@@ -111,7 +111,34 @@ public class Main {
         System.out.println("Omtrek: " + c.geefOmtrek());
         System.out.println("Oppervlakte: " + c.geefOppervlakte());
     }
+}*/
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Geef straat naam:");
+        String straatNaam = scanner.next();
+
+        System.out.println("Geef de huis nummer:");
+        int huisNummer = scanner.nextInt();
+
+        System.out.println("Geef de bus:");
+        String bus = scanner.next();
+
+        System.out.println("Geef post code:");
+        int postCode = scanner.nextInt();
+
+        System.out.println("Geef de woonplaats:");
+        String woonplaats= scanner.next();
+
+        M3M1 a = new M3M1 (straatNaam, huisNummer, bus, postCode, woonplaats);
+        a.print();
+    }
 }
+
 
 
 // bij het examen ga je de juiste tijdsclasse moeten gebruiken! vergelijkingen ervoor of erna..
