@@ -87,10 +87,144 @@ void main () {
     String c;
 }*/
 
-void main (){
+/*void main (){
     Date d = new Date ();
     System.out.println(d);
     LocalDate d2 = LocalDate.now();
+}*/
+
+/*import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Geef de straal:");
+        float straal = scanner.nextFloat();
+
+        System.out.println("Geef de kleur:");
+        String kleur = scanner.next();
+
+        Cirkel c = new Cirkel(straal, kleur);
+        c.print();
+
+        System.out.println("Omtrek: " + c.geefOmtrek());
+        System.out.println("Oppervlakte: " + c.geefOppervlakte());
+    }
+}*/
+
+/*import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Geef straat naam:");
+        String straatNaam = scanner.next();
+
+        System.out.println("Geef de huis nummer:");
+        int huisNummer = scanner.nextInt();
+
+        System.out.println("Geef de bus:");
+        String bus = scanner.next();
+
+        System.out.println("Geef post code:");
+        int postCode = scanner.nextInt();
+
+        System.out.println("Geef de woonplaats:");
+        String woonplaats= scanner.next();
+
+        M3M1 a = new M3M1 (straatNaam, huisNummer, bus, postCode, woonplaats);
+        a.print();
+    }
+}*/
+
+/*import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("voornaam:");
+        String voorNaam = scanner.next();
+
+        System.out.println("achternaam:");
+        String achterNaam = scanner.next();
+
+        System.out.println("email:");
+        String email = scanner.next();
+
+        M4E1 a = new M4E1(voorNaam, achterNaam);  // eerst aanmaken
+        a.setemail(email);
+
+        M3M1 adres = new M3M1("Kerkstraat", 10, "4A", 1800, "Brussel");
+        a.setAdres(adres);  // koppelen aan persoon
+
+        System.out.println(a);
+
+    }
+}*/
+
+/*import java.util.Scanner;
+
+public class Main  {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("breedte:");
+        double breedte = scanner.nextDouble();
+
+        System.out.println("straal:");
+        double straal = scanner.nextDouble();
+
+        System.out.println("prijs pad:");
+        float prijsPad = scanner.nextFloat();
+
+        System.out.println("prijs omheining:");
+        float prijsOmheining = scanner.nextFloat();
+
+        M4E2 a = new M4E2(prijsPad, prijsOmheining, breedte);
+
+        Cirkel c = new Cirkel((float) straal);  // casting want straal is double
+        a.setcirkel(c);// koppelen aan zwembad
+
+        System.out.println(a);  // roept automatisch toString() aan
+
+    }
+}*/
+
+import java.util.Scanner;
+
+public class Main  {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("naam:");
+        String naam = scanner.next();
+
+        System.out.println("massa:");
+        double massa = scanner.nextDouble();
+
+        System.out.println("leeftijd:");
+        int leeftijd = scanner.nextInt();
+
+        System.out.println("stamboeknummer:");
+        int stamBoekNummer = scanner.nextInt();
+
+        M4M1 a = new M4M1(massa, leeftijd, naam);
+        Hond h = new Hond(naam, massa, leeftijd, stamBoekNummer);
+        System.out.println(a);  // print huisdier
+        System.out.println(h);  // print hond aan
+
+    }
 }
+
+
+
+
+
 
 // bij het examen ga je de juiste tijdsclasse moeten gebruiken! vergelijkingen ervoor of erna..
