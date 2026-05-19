@@ -139,7 +139,7 @@ public class Main {
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
@@ -161,6 +161,35 @@ public class Main {
         a.setAdres(adres);  // koppelen aan persoon
 
         System.out.println(a);
+
+    }
+}*/
+
+import java.util.Scanner;
+
+public class Main  {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("breedte:");
+        double breedte = scanner.nextDouble();
+
+        System.out.println("straal:");
+        double straal = scanner.nextDouble();
+
+        System.out.println("prijs pad:");
+        float prijsPad = scanner.nextFloat();
+
+        System.out.println("prijs omheining:");
+        float prijsOmheining = scanner.nextFloat();
+
+        M4E2 a = new M4E2(prijsPad, prijsOmheining, breedte);
+
+        Cirkel c = new Cirkel((float) straal);  // casting want straal is double
+        a.setcirkel(c);// koppelen aan zwembad
+
+        System.out.println(a);  // roept automatisch toString() aan
 
     }
 }
