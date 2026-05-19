@@ -165,7 +165,7 @@ public class Main {
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class Main  {
     public static void main(String[] args) {
@@ -192,7 +192,37 @@ public class Main  {
         System.out.println(a);  // roept automatisch toString() aan
 
     }
+}*/
+
+import java.util.Scanner;
+
+public class Main  {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("naam:");
+        String naam = scanner.next();
+
+        System.out.println("massa:");
+        double massa = scanner.nextDouble();
+
+        System.out.println("leeftijd:");
+        int leeftijd = scanner.nextInt();
+
+        System.out.println("stamboeknummer:");
+        int stamBoekNummer = scanner.nextInt();
+
+        M4M1 a = new M4M1(massa, leeftijd, naam);
+        Hond h = new Hond(naam, massa, leeftijd, stamBoekNummer);
+        System.out.println(a);  // print huisdier
+        System.out.println(h);  // print hond aan
+
+    }
 }
+
+
 
 
 
