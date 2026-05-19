@@ -113,7 +113,7 @@ public class Main {
     }
 }*/
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
@@ -137,7 +137,34 @@ public class Main {
         M3M1 a = new M3M1 (straatNaam, huisNummer, bus, postCode, woonplaats);
         a.print();
     }
+}*/
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("voornaam:");
+        String voorNaam = scanner.next();
+
+        System.out.println("achternaam:");
+        String achterNaam = scanner.next();
+
+        System.out.println("email:");
+        String email = scanner.next();
+
+        M4E1 a = new M4E1(voorNaam, achterNaam);  // eerst aanmaken
+        a.setemail(email);
+
+        M3M1 adres = new M3M1("Kerkstraat", 10, "4A", 1800, "Brussel");
+        a.setAdres(adres);  // koppelen aan persoon
+
+        System.out.println(a);
+
+    }
 }
+
 
 
 
